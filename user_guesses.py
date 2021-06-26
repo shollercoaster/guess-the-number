@@ -1,6 +1,8 @@
 import random
 answer=0
 num=random.randint(1,100)
+new=num+0.5
+print(new)
 
 def run_game():
     for i in range (0,10):
@@ -10,7 +12,8 @@ def run_game():
         elif num>guess:
             print("Higher it!")
         elif guess==num:
-            print(f"Umm no {num} wasn't my number! It was.. erm.. {num+1}. You lose, hmph.")
+            print(f"Umm no {num} wasn't my number! It was.. erm.. {new}. You lose, hmph.")
+            print(guesses)
             exit()
         else:
             print("Bruh add valid responses from next time on.")

@@ -2,7 +2,7 @@ import random
 answer=0
 num=random.randint(1,100)
 new=num+0.5
-print(new)
+# print(new)
 
 def run_game():
     for i in range (0,10):
